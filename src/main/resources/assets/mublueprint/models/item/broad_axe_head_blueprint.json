@@ -1,0 +1,6 @@
+{
+  "parent": "mublueprint:item/base",
+  "textures": {
+    "layer0" : "mublueprint:item/broad_axe_head_blueprint"
+  }
+}

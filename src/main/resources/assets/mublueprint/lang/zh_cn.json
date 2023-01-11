@@ -1,0 +1,13 @@
+{
+  "itemGroup.mublueprint.main": "蓝图",
+  "item.mublueprint.blueprint": "普通蓝图",
+  "item.mublueprint.broad_axe_head_blueprint": "宽刃蓝图",
+  "item.mublueprint.broad_blade_blueprint": "板斧刃蓝图",
+  "item.mublueprint.large_plate_blueprint": "大板蓝图",
+  "item.mublueprint.pick_head_blueprint": "镐头蓝图",
+  "item.mublueprint.round_plate_blueprint": "圆板蓝图",
+  "item.mublueprint.small_axe_head_blueprint": "小型斧刃蓝图",
+  "item.mublueprint.small_blade_blueprint": "小型剑刃蓝图",
+  "item.mublueprint.tool_binding_blueprint": "绑定结蓝图",
+  "item.mublueprint.tool_handle_blueprint": "工具手柄蓝图"
+}
