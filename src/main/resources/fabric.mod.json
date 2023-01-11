@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "mublueprint",
+  "version": "${version}",
+  "name": "Mublueprint",
+  "description": "Blueprints for Mufog.",
+  "authors": [
+    "Chemiofitor"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/mublueprint/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "hlft.fabric.mublueprint.client.MublueprintClient"
+    ],
+    "main": [
+      "hlft.fabric.mublueprint.Mublueprint"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
