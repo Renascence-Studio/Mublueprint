@@ -12,9 +12,6 @@
   "icon": "assets/mublueprint/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "hlft.fabric.mublueprint.client.MublueprintClient"
-    ],
     "main": [
       "hlft.fabric.mublueprint.Mublueprint"
     ]
@@ -22,6 +19,7 @@
   "depends": {
     "fabricloader": ">=0.14.12",
     "fabric": "*",
-    "minecraft": "1.18.2"
+    "minecraft": "1.18.2",
+    "mufog": "*"
   }
 }
