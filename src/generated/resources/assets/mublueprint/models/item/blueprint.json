@@ -1,6 +1,6 @@
 {
   "parent": "mublueprint:item/base",
   "textures": {
-    "layer0" : "mublueprint:item/pick_head_blueprint"
+    "layer0": "mublueprint:item/blueprint"
   }
 }

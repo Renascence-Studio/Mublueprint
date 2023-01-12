@@ -11,6 +11,6 @@ public class MublueprintTab {
     public static final ItemGroup MAIN = FabricItemGroupBuilder
             .create(asId("main"))
             .icon(Mublueprint::getIconItem)
-            .appendItems(itemStacks -> itemStacks.addAll(ITEMS.stream().map(ItemStack::new).toList()))
+            .appendItems(itemStacks -> itemStacks.addAll(ITEMS.values().stream().map(ItemStack::new).toList()))
             .build();
 }

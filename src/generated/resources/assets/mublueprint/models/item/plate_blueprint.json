@@ -1,6 +1,6 @@
 {
   "parent": "mublueprint:item/base",
   "textures": {
-    "layer0" : "mublueprint:item/large_plate_blueprint"
+    "layer0": "mublueprint:item/plate_blueprint"
   }
 }

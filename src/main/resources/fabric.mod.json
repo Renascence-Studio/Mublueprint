@@ -7,18 +7,30 @@
   "authors": [
     "Chemiofitor"
   ],
-  "contact": {},
+  "contact": {
+    "issues": "https://github.com/Renascence-Studio/Mublueprint/issues",
+    "sources": "https://github.com/Renascence-Studio/Mublueprint"
+  },
   "license": "MIT",
   "icon": "assets/mublueprint/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
       "hlft.fabric.mublueprint.Mublueprint"
+    ],
+    "fabric-datagen": [
+      "hlft.fabric.mublueprint.data.MuDataGenerator"
     ]
   },
   "depends": {
     "fabricloader": ">=0.14.12",
     "fabric": "*",
-    "minecraft": "1.18.2"
+    "minecraft": "1.18.2",
+    "mufog": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "parent": "mufog"
+    }
   }
 }

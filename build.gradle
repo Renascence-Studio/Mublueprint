@@ -3,10 +3,29 @@ plugins {
     id 'maven-publish'
 }
 
-version = project.mod_version
+version = project.minecraft_version + "-" + project.mod_version
 group = project.maven_group
 
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+loom.runs {
+    datagen {
+        server()
+        vmArg "-Dfabric-api.datagen"
+        vmArg "-Dfabric-api.datagen.output-dir=${file("src/generated/resources")}"
+        vmArg "-Dfabric-api.datagen.strict-validation"
+        vmArg "-Dfabric-api.datagen.modid=mublueprint"
+
+        runDir "build/datagen"
+    }
+}
+assemble.dependsOn runDatagen
+
+
 repositories {
+    maven {
+        url = "https://api.modrinth.com/maven"
+    }
 }
 
 dependencies {
@@ -15,6 +34,8 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    modImplementation "maven.modrinth:mufog:1.1"
 }
 
 processResources {
@@ -46,9 +67,7 @@ java {
 }
 
 jar {
-    from("LICENSE") {
-        rename { "${it}_${project.archivesBaseName}" }
-    }
+    from("LICENSE")
 }
 
 // configure the maven publication

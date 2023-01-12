@@ -8,15 +8,15 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 import static hlft.fabric.mublueprint.MublueprintTab.MAIN;
 
 public class Mublueprint implements ModInitializer {
     public static final String MOD_ID = "mublueprint";
 
-    public static final List<Item> ITEMS = new ArrayList<>();
+    public static final Map<String , Item> ITEMS = new HashMap<>();
 
     @Override
     public void onInitialize() {
@@ -30,6 +30,7 @@ public class Mublueprint implements ModInitializer {
         createItem("small_blade_blueprint", commonItem());
         createItem("tool_binding_blueprint", commonItem());
         createItem("tool_handle_blueprint", commonItem());
+        createItem("plate_blueprint", commonItem());
     }
 
     public static Identifier asId(String path) {
@@ -50,6 +51,6 @@ public class Mublueprint implements ModInitializer {
 
     public static void createItem(String id, Item item) {
         Registry.register(Registry.ITEM, asId(id), item);
-        ITEMS.add(item);
+        ITEMS.put(id, item);
     }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "mublueprint:item/base",
   "textures": {
-    "layer0" : "mublueprint:item/small_axe_head_blueprint"
+    "layer0": "mublueprint:item/small_blade_blueprint"
   }
 }

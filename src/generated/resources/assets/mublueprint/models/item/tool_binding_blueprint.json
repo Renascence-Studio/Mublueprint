@@ -1,6 +1,6 @@
 {
   "parent": "mublueprint:item/base",
   "textures": {
-    "layer0" : "mublueprint:item/blueprint"
+    "layer0": "mublueprint:item/tool_binding_blueprint"
   }
 }
